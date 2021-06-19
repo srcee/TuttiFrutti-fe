@@ -15,12 +15,6 @@ import "antd/dist/antd.css";
 import './AddFruit.css';
 
 
-function getBase64(img, callback) {
-	const reader = new FileReader();
-	reader.addEventListener('load', () => callback(reader.result));
-	reader.readAsDataURL(img);
-}
-
 function AddFruit(props) {
     const [ name, setName ] = useState();
     const [ color, setColor ] = useState();
