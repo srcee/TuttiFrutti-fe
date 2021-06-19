@@ -1,0 +1,17 @@
+.nav-logo {
+    width: 15rem;
+}
+
+.nav-drawler a {
+    display: block;
+    color:seagreen;
+    border-bottom: 1px solid seagreen;
+    margin: 1rem 0;
+    font-size: larger;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.nav-drawler a:hover {
+    transform: scale(1.05);
+}
