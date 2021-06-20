@@ -7,7 +7,8 @@
     border-radius: 1rem;
     text-align: center;
     transition: transform .5s;
-    width: 240px;
+    width: 15rem;
+    height: 20rem;
     margin: 1rem auto;
     animation: slideup 1s forwards;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
@@ -21,8 +22,8 @@
 }
 
 .product-card-image {
-    width: 238px;
-    height: 238px;
+    width: 14.8rem;
+    height: 14.8rem;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }

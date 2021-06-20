@@ -5,7 +5,11 @@ import { primaryColor, secondaryColor } from '../../constants/themes';
 
 export const Nav = styled.nav`
   background: ${primaryColor};
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -37,7 +41,7 @@ export const Bars = styled(FaBars)`
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
-    font-size: 1.8rem;
+    font-size: 33px;
     cursor: pointer;
   }
 `;

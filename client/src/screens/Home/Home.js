@@ -6,14 +6,18 @@ import RingLoader from "react-spinners/RingLoader";
 import './Home.css'
 import {primaryColor} from '../../constants/themes';
 import fruitService from '../../services/fruitsService';
+import Banner from '../../components/Banner/Banner';
 
 const Home = () => {
     const [ fruits, setFruits ] = useState([]);
     const [ isLoading, setIsLoading ] = useState(true);
 
     const override = css`
-        display: block; 
-        margin: 10rem auto;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     `;
 
     useEffect(() => {
@@ -26,13 +30,15 @@ const Home = () => {
     }, []);
 
     return (
-        isLoading ? (
-            <RingLoader color={primaryColor} css={override} size={100} />
-        ) : (
-            <div className="product-cards-container">
-                {fruits.map(fruit => <ProductCard key={fruit._id} product={fruit}/>)}
+        <>
+            <Banner />
+            <div className='product-cards-container'>
+                {isLoading ? 
+                    <RingLoader color={primaryColor} css={override} size={100} /> :
+                    fruits.map(fruit => <ProductCard key={fruit._id} product={fruit}/>)
+                }
             </div>
-        )
+        </>
     )
 }
 

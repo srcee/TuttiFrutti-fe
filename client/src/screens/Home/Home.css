@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1200px;
-    margin: 5rem 1rem;
+    max-width: 1180px;
+    margin: 5rem auto 0;
 }
 
 @media screen and (max-width: 800px) {

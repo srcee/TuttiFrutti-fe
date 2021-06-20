@@ -7,15 +7,11 @@ var axios = Axios.create({
 
 function getAllFruits() {
     return axios.get('/api/fruits')
-            .catch(console.error);
+        .catch(console.error);
 }
 
 function addFruit(fruit) {
     return axios.post('/api/fruits', fruit)
-        .then(response => {
-            console.log(response);
-            return response;
-        })
         .catch(console.error)
 }
 
