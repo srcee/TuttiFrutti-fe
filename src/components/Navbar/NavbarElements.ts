@@ -1,7 +1,8 @@
-import { FaBars } from 'react-icons/fa';
-import { NavLink as Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { primaryColor, secondaryColor } from '../../constants/themes';
+import { FaBars } from "react-icons/fa";
+import { NavLink as Link } from "react-router-dom";
+import styled from "styled-components";
+
+import { primaryColor, secondaryColor } from "src/constants/themes";
 
 export const Nav = styled.nav`
   background: ${primaryColor};
@@ -27,7 +28,8 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  &.active, &:hover {
+  &.active,
+  &:hover {
     color: orange;
   }
 `;
