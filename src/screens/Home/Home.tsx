@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-
-import ProductCard from "../../components/ProductCard/ProductCard";
-import { css } from "@emotion/react";
 import RingLoader from "react-spinners/RingLoader";
-import "./Home.css";
-import { primaryColor } from "../../constants/themes";
-import fruitService from "../../services/fruitsService";
+import { css } from "@emotion/react";
+
+import fruitService from "src/services/fruitsService";
 import Banner from "src/components/Banner/Banner";
+import ProductCard from "src/components/ProductCard/ProductCard";
+import { primaryColor } from "src/constants/themes";
 import { FruitModel } from "src/ts/models/fruit.model";
+
+import "./Home.css";
 
 const Home: React.FC = () => {
   const [fruits, setFruits] = useState<FruitModel[]>([]);
@@ -26,6 +27,7 @@ const Home: React.FC = () => {
       const fruits = await fruitService.getAllFruits();
 
       setFruits(fruits);
+      setIsLoading(false);
     };
 
     fetchAllFruits();

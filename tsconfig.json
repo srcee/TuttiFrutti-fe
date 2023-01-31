@@ -4,11 +4,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -22,16 +18,8 @@
     "noEmit": true,
     "noImplicitAny": false,
     "jsx": "react-jsx",
-    "typeRoots": [
-      "./node_modules/@types",
-      "./typings"
-    ],
-    "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist",
-    "sourceMap": true
+    "typeRoots": ["./node_modules/@types", "./typings"],
+    "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "./src/**/*.tsx",
-    "./src/**/*.ts"
-  ]
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"]
 }
